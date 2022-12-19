@@ -31,12 +31,12 @@
 
 # Download Image; replace link to $image to add your own image
 
-$image =  "https://i.pinimg.com/originals/6e/d7/b0/6ed7b0842f02db2f93018561c1c55d9c.png"
+$image =  "https://raw.githubusercontent.com/camerr01/Flipper-Zero-BadUSB/main/Flip-JumpScare_RC/jumpscare.png"
 
 $i = -join($image,"?dl=1")
 iwr $i -O $env:TMP\i.png
 
-iwr https://i.pinimg.com/originals/6e/d7/b0/6ed7b0842f02db2f93018561c1c55d9c.png?dl=1 -O $env:TMP\i.png
+iwr https://raw.githubusercontent.com/camerr01/Flipper-Zero-BadUSB/main/Flip-JumpScare_RC/jumpscare.png?dl=1 -O $env:TMP\i.png
 
 
 <#
