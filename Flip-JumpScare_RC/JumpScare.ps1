@@ -38,15 +38,13 @@ iwr $i -O $env:TMP\i.png
 
 iwr https://raw.githubusercontent.com/camerr01/Flipper-Zero-BadUSB/main/Flip-JumpScare_RC/jumpscare.png?dl=1 -O $env:TMP\i.png
 
-
-<#
 # Download WAV file; replace link to $wav to add your own sound
 
 $wav = "https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/OMG/Payloads/OMG-JumpScare/female_scream.wav?raw=true"
 
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.wav
-#>
+
 
 
 #----------------------------------------------------------------------------------------------------
@@ -163,7 +161,7 @@ $o=New-Object -ComObject WScript.Shell
 
 .NOTES 
 	This is to play the WAV file
-
+#>
 
 function Play-WAV{
 $PlayWav=New-Object System.Media.SoundPlayer;$PlayWav.SoundLocation="$env:TMP\s.wav";$PlayWav.playsync()
@@ -181,8 +179,6 @@ Set-WallPaper -Image "$env:TMP\i.png" -Style Center
 Play-WAV
 
 #----------------------------------------------------------------------------------------------------
-
-#>
 
 <#
 
