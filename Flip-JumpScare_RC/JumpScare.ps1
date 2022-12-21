@@ -40,7 +40,7 @@ iwr https://raw.githubusercontent.com/camerr01/Flipper-Zero-BadUSB/main/Flip-Jum
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/camerr01/Flipper-Zero-BadUSB/blob/main/Flip-JumpScare_RC/Batman%20on%20drugs.wav?raw=true"
+$wav = "https://github.com/camerr01/Flipper-Zero-BadUSB/blob/main/Flip-JumpScare_RC/Batman-on-drugs.wav?raw=true"
 
 
 $w = -join($wav,"?dl=1")
